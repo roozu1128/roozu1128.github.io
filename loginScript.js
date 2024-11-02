@@ -12,7 +12,7 @@ document.getElementById("login-form").addEventListener("submit", function (event
     // Check if the entered name is in the list of valid usernames
     if (validUsernames.includes(enteredName)) {
         // Here you can redirect to another page if needed
-        window.location.href = "file:///C:/Users/jurirozu.DESKTOP-4D97T3K/Desktop/web/buttons.html#"; // Redirect to a welcome page
+        window.location.href = "main.html"; // Redirect to a welcome page
     } else {
         document.getElementById("error-message").textContent = "Invalid name. Please try again.";
     }
