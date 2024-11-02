@@ -1,7 +1,7 @@
 // script.js
 
 // Array of valid usernames
-const validUsernames = ["32210126"];
+const validUsernames = ["32210126", "42310602", "32210855", "32210289"];
 
 document.getElementById("login-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission
