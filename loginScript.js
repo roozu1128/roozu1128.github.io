@@ -15,6 +15,6 @@ document.getElementById("login-form").addEventListener("submit", function (event
         // Here you can redirect to another page if needed
         window.location.href = "main.html"; // Redirect to a welcome page
     } else {
-        document.getElementById("error-message").textContent = "Invalid name. Please try again.";
+        document.getElementById("error-message").textContent = "Invalid Student Number. Please try again.";
     }
 });
