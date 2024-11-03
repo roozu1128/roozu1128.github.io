@@ -32,72 +32,164 @@ body {
 	width: 100%;
 	height: 400px;
 	background-color: rgb(0, 51, 25);
-	top: 701px;
+	top: 805px;
 }
 .last-base{
 	position: absolute;
 	width: 100%;
 	height: 300px;
 	background-color: rgb(0, 51, 25);
-	bottom: -1400px;
+	bottom: -150%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-content: flex-start;
 }
+.philosophy-base {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	left: 3%;
+	background-color: dimgrey;
+	top: 145%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center; /* Center items horizontally */
+	justify-content: center; /* Center items vertically */
+	text-align: justify; /* Justify the text */
+	padding: 20px;
+}
+.vision-base {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	left: 35%;
+	background-color: dimgrey;
+	top: 145%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center; /* Center items horizontally */
+	justify-content: center; /* Center items vertically */
+	text-align: justify; /* Justify the text */
+	padding: 20px;
+}
+.mission-base {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	left: 67%;
+	background-color: dimgrey;
+	top: 145%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center; /* Center items horizontally */
+	justify-content: center; /* Center items vertically */
+	text-align: justify; /* Justify the text */
+	padding: 20px;
+}
 /*LINES*/
-.first-line{
+.border-line {
 	position: absolute;
-	width: 100%;
-	height: 3px;
 	background-color: yellow;
 	z-index: 10;
-	top: 802px;
-}
-.second-line {
-	position: absolute;
 	width: 100%;
 	height: 3px;
-	background-color: yellow;
-	z-index: 10;
-	top: 1100px;
 }
-.third-line {
+.seperator-line {
+	background-color: rgb(255, 255, 153);
+	z-index: 9;
 	position: absolute;
+	height: 2px;
+	opacity: 0.7;
 	width: 100%;
-	height: 3px;
-	background-color: yellow;
-	z-index: 10;
-	bottom: -1100px;
 }
+	#first{
+		top: 0;
+	}
+	#second{
+		bottom: 0;
+	}
+	#firstseperator{
+		top: 26%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#secondseperator{
+		top: 41%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#thirdseperator{
+		top: 53%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#fourthseperator{
+		top: 80.5%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#fifthseperator{
+		width: 3px;
+		height: 250px;
+		top: 0px;
+		right: 300px;
+	}
+	#firstborderseperator{
+		top: 0px;
+	}
 /*Texts*/
 .contacts{
 	color: white;
 	font-size: 40px;
-	right: 10%;
+	right: 4%;
 	position:absolute;
-	top: 10%;
+	top: 8%;
+}
+#philosophy-text{
+	color: darkgreen;
+	font-size: 40px;
+}
+#philomessage {
+	font-size: 30px;
+}
+#vision-text{
+	color: darkgreen;
+	font-size: 50px;
+}
+#vissmessage{
+	font-size: 30px;
+}
+#mission-text{
+	color: darkgreen;
+	font-size: 50px;
+}
+#missmessage{
+	font-size: 30px;
 }
 .number{
 	color: white;
 	font-size: 20px;
-	right: 12.5%;
+	right: 7.5%;
 	position: absolute;
-	top: 35%;
+	top: 30%;
 }
 .address {
 	color: white;
 	font-size: 20px;
-	right: 9%;
+	right: 4%;
 	position: absolute;
-	top: 60%;
+	top: 55%;
 }
 .email {
 	color: white;
 	font-size: 20px;
-	right: 8.5%;
+	right: 3.5%;
 	position: absolute;
-	top: 47%;
+	top: 43%;
 }
 /* Youtube Facebook Website button style */
 .facebook-logo {
@@ -115,6 +207,7 @@ body {
 	transition: transform 0.3s;
 	left: 25px;
 	z-index: 5;
+	bottom: 12px;
 }
 
 	.facebook-logo:before {
@@ -140,6 +233,7 @@ body {
 	left: 90px;
 	transition: transform 0.3s;
 	z-index: 5;
+	bottom: 12px;
 }
 
 	.youtube-logo:before {
@@ -155,6 +249,7 @@ body {
 	left: 155px;
 	transition: transform 0.3s;
 	z-index: 5;
+	bottom: 9px;
 
 }
 	.website-logo:hover{
@@ -237,7 +332,7 @@ body {
 		background-color: transparent;
 		text-decoration: none;
 		padding: 1rem;
-		transition: color 0.5s; /* Removed extra comma */
+		transition: color 0.5s; 
 	}
 
 	.nav_item:hover a {
@@ -258,41 +353,38 @@ body {
 			color: green;
 		}
 
-/* Dropdown Menu Styles */
+
 .droppeddown {
-	opacity: 0;
-	visibility: hidden;
+	opacity: 0; 
+	max-height: 0; 
+	overflow: hidden; 
+	transition: opacity 0.5s ease, max-height 0.5s ease, transform 0.3s ease;
+	transform: translateY(-10px); 
 	position: absolute;
 	background-color: white;
 	list-style: none;
-	margin-top: 1rem;
-	transition: opacity 0.5s ease, transform 0.3s ease;
-	transform: translateY(-10px);
+	margin-top: 30px;
+	right: -40px;
+	cursor: pointer;
 }
 
-	.droppeddown li a {
-		padding: 1rem;
+	.droppeddown.active {
+		opacity: 1; 
+		max-height: 400px; 
+		pointer-events: auto; 
+	}
+
+	.dropdown-link {
+		padding: 8px;
 		display: block;
-		color: black; 
+		color: black;
+		transition: color 0.5s;
 	}
 
-.nav_item:hover .droppeddown {
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);
-	z-index: 20;
-}
-
-.droppeddown li a {
-	padding: 1rem;
-	display: block;
-	color: black;
-	transition: color 0.3s;
-}
-
-	.droppeddown li a:hover {
-		color: darkgreen;
+	.dropdown-link:hover{
+		color:darkgreen;
 	}
+
 
 .mobile-menu-icon{
 	display: none;
@@ -306,21 +398,23 @@ body {
 	background: white;
 	margin: 4px 0;
 }
-@media (max-width: 768px) {
-	.back-image img{
+
+@media (max-width: 1024px) {
+	.back-image img {
 		top: 95px;
 	}
-	.back-opacity{
+
+	.back-opacity {
 		top: 98px;
 	}
-	.heading{
+
+	.heading {
 		top: 200px;
 		font-size: 20px;
 	}
+
 	.line {
-		width: 100%;
 		position: fixed;
-		top: 100px;
 	}
 
 	.nav_item {
@@ -337,23 +431,155 @@ body {
 		position: relative;
 		display: inline-block;
 	}
-	.first-line{
-		top: 795px;
-	}
-	.back-image img{
+
+	.back-image img {
 		height: 350px;
 	}
-	.back-opacity{
+
+	.back-opacity {
 		height: 350px;
 	}
-	.first-base{
+
+	.first-base {
 		top: 445px;
 	}
-	.first-line{
-		top: 445px;
+
+	.droppeddown {
+		right: -15px;
+		top: 50px;
+		font-size: 20px;
 	}
-	.second-line{
-		top: 842px;
+
+	.contacts {
+		top: 4%;
+		font-size: 30px;
+		left: 8.5%;
+	}
+
+	.number {
+		top: 16%;
+		font-size: 15px;
+		left: 11%;
+	}
+
+	.email {
+		top: 25%;
+		font-size: 15px;
+		left: 7%;
+	}
+
+	.address {
+		top: 34%;
+		font-size: 15px;
+		left: 9%;
+	}
+
+	.last-base {
+		height: 400px;
+	}
+
+	.third-line {
+		bottom: -1000px;
+	}
+
+	#firstseperator {
+		top: 15%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#secondseperator {
+		top: 23%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#thirdseperator {
+		top: 32.5%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#fourthseperator {
+		top: 52%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#fifthseperator {
+		width: 3px;
+		height: 210px;
+		top: 0px;
+		left: 265px;
+	}
+
+	.philosophy-base {
+		width: 80%;
+		left: 10%;
+		top: 900px;
+		height: 300px;
+	}
+
+	#philosophy-text {
+		font-size: 30px;
+	}
+
+	#philomessage {
+		font-size: 20px;
+	}
+
+	.mission-base {
+		width: 80%;
+		left: 10%;
+		top: 1230px;
+		height: 300px;
+	}
+
+	#mission-text {
+		font-size: 30px;
+	}
+
+	#missmessage {
+		font-size: 20px;
+	}
+
+	.vision-base {
+		width: 80%;
+		left: 10%;
+		top: 1570px;
+		height: 300px;
+	}
+
+	#vision-text {
+		font-size: 30px;
+	}
+
+	#vissmessage {
+		font-size: 20px;
 	}
 }
 
+@media (min-height: 700px) and (max-height: 899px){
+	.last-base {
+		height: 400px;
+		top: 225%;
+	}
+}
+
+@media (min-height: 1300px) and (max-height: 1500px){
+	.last-base{
+		top: 200%;
+	}
+}
+
+@media (min-height: 667px) and (max-height: 790px){
+	.last-base{
+		top: 290%;
+	}
+}
+
+@media (min-height: 0px) and (max-height: 660px){
+	.last-base{
+		top: 320%
+	}
+}

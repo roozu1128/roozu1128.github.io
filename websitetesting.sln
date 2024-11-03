@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3AEBCFC-5FE2-4277-B79C-CAF4FB7598E8}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		..\..\..\Desktop\webtesting\logincover.JPG = ..\..\..\Desktop\webtesting\logincover.JPG
+		Script.js = Script.js
+		styles.css = styles.css
+		..\..\..\Pictures\test2.JPG = ..\..\..\Pictures\test2.JPG
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6F2865B-3945-4093-BBBF-FB3FE3725CB6}
+	EndGlobalSection
+EndGlobal
