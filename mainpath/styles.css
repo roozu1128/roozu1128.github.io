@@ -1,0 +1,611 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+	text-decoration: none;
+}
+/*BACKGROUND IMAGE*/
+.back-image img{
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	top: 105px;
+	z-index: 1;
+}
+.back-opacity {
+	position: absolute;
+	width: 100%;
+	background: linear-gradient(to bottom, darkorange, yellow, darkgreen);
+	z-index: 5;
+	height: 700px;
+	opacity: 0.4;
+	top: 105px;
+}
+
+/*BASES*/
+.first-base{
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	background-color: rgb(0, 51, 25);
+	top: 805px;
+}
+.last-base{
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	background-color: rgb(0, 51, 25);
+	bottom: -150%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+}
+.philosophy-base {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	left: 3%;
+	background-color: rgb(255,255,133);
+	top: 145%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center; /* Center items horizontally */
+	justify-content: center; /* Center items vertically */
+	text-align: justify; /* Justify the text */
+	padding: 20px;
+}
+.vision-base {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	left: 35%;
+	background-color: rgb(255,255,133);
+	top: 145%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: justify;
+	padding: 20px;
+}
+.mission-base {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	left: 67%;
+	background-color: rgb(255,255,133);
+	top: 145%;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: justify;
+	padding: 20px;
+}
+/*LINES*/
+.border-line {
+	position: absolute;
+	background-color: yellow;
+	z-index: 10;
+	width: 100%;
+	height: 3px;
+}
+.seperator-line {
+	background-color: rgb(255, 255, 153);
+	z-index: 9;
+	position: absolute;
+	height: 2px;
+	opacity: 0.7;
+	width: 100%;
+}
+	#first{
+		top: 0;
+	}
+	#second{
+		bottom: 0;
+	}
+	#firstseperator{
+		top: 26%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#secondseperator{
+		top: 41%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#thirdseperator{
+		top: 53%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#fourthseperator{
+		top: 80.5%;
+		width: 230px;
+		right: 2.5%;
+	}
+	#fifthseperator{
+		width: 3px;
+		height: 250px;
+		top: 0px;
+		right: 300px;
+	}
+	#firstborderseperator{
+		top: 0px;
+	}
+/*Texts*/
+.contacts{
+	color: white;
+	font-size: 40px;
+	right: 4%;
+	position:absolute;
+	top: 8%;
+}
+#philosophy-text{
+	color: darkgreen;
+	font-size: 40px;
+}
+#philomessage {
+	font-size: 30px;
+}
+#vision-text{
+	color: darkgreen;
+	font-size: 50px;
+}
+#vissmessage{
+	font-size: 30px;
+}
+#mission-text{
+	color: darkgreen;
+	font-size: 50px;
+}
+#missmessage{
+	font-size: 30px;
+}
+.number{
+	color: white;
+	font-size: 20px;
+	right: 7.5%;
+	position: absolute;
+	top: 30%;
+}
+.address {
+	color: white;
+	font-size: 20px;
+	right: 4%;
+	position: absolute;
+	top: 55%;
+}
+.email {
+	color: white;
+	font-size: 20px;
+	right: 3.5%;
+	position: absolute;
+	top: 43%;
+}
+/* Youtube Facebook Website button style */
+.facebook-logo {
+	width: 50px;
+	height: 50px;
+	background-color: #3b5998; 
+	border-radius: 50%; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 24px;
+	position: absolute;
+	text-decoration: none;
+	transition: transform 0.3s;
+	left: 25px;
+	z-index: 5;
+	bottom: 12px;
+}
+
+	.facebook-logo:before {
+		content: "f"; 
+		font-family: Arial, sans-serif; 
+	}
+	.facebook-logo:hover{
+		transform: scale(1.3);
+	}
+.youtube-logo {
+	width: 50px;
+	height: 50px;
+	background-color: red; 
+	border-radius: 5px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 24px;
+	text-decoration: none;
+	position: absolute;
+	padding: 20px;
+	left: 90px;
+	transition: transform 0.3s;
+	z-index: 5;
+	bottom: 12px;
+}
+
+	.youtube-logo:before {
+		content: "\25B6"; 
+		font-size: 30px; 
+	}
+
+	.youtube-logo:hover{
+		transform: scale(1.3);
+	}
+.website-logo{
+	position: absolute;
+	left: 155px;
+	transition: transform 0.3s;
+	z-index: 5;
+	bottom: 9px;
+
+}
+	.website-logo:hover{
+		transform: scale(1.3)
+	}
+/* MAIN TITLE */
+.heading {
+	font-size: 30px;
+	text-align: center;
+	background: transparent;
+	color: white;
+	text-shadow: 1px 1px 10px black;
+	position: relative;
+	top: 280px;
+	z-index: 10;
+}
+
+/* YELLOW BORDER */
+.UPPERHEAD_container {
+	background-color: rgb(243, 191, 68);
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+}
+
+.line{
+	background-color: forestgreen;
+	width: 100%;
+	padding: 3px;
+	position: fixed;
+	top: 100px;
+	z-index: 1;
+}
+.logo{
+	display: none;
+	width: 40px;
+}
+
+.UPPERHEAD_container {
+	transition: background-color 0.3s;
+}
+
+	.UPPERHEAD_container.scrolled {
+		background-color: rgb(210, 210, 210); 
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+	}
+
+.image {
+	position: relative;
+	display: block;
+}
+
+/* Dropdown bar */
+.dropdown {
+	background-color: black;
+	color: white;
+	position: relative;
+	z-index: 10;
+}
+
+.barmenu {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav_item {
+	position: relative;
+	font-size: 30px;
+	justify-content: flex-end;
+	right: 17%;
+}
+
+	.nav_item a {
+		color: rgb(224, 224, 224);
+		background-color: transparent;
+		text-decoration: none;
+		padding: 1rem;
+		transition: color 0.5s; 
+	}
+
+	.nav_item:hover a {
+		color: green;
+	}
+
+	.nav_item a {
+		color: rgb(224, 224, 224); 
+		transition: color 0.5s; 
+	}
+
+
+		.nav_item a.scrolled {
+			color: black; 
+		}
+
+		.nav_item:hover a.scrolled{
+			color: green;
+		}
+
+
+.droppeddown {
+	opacity: 0; 
+	max-height: 0; 
+	overflow: hidden; 
+	transition: opacity 0.5s ease, max-height 0.5s ease, transform 0.3s ease;
+	transform: translateY(-10px); 
+	position: absolute;
+	background-color: white;
+	list-style: none;
+	margin-top: 30px;
+	right: -40px;
+	cursor: pointer;
+}
+
+	.droppeddown.active {
+		opacity: 1; 
+		max-height: 400px; 
+		pointer-events: auto; 
+	}
+
+	.dropdown-link {
+		padding: 8px;
+		display: block;
+		color: black;
+		transition: color 0.5s;
+	}
+
+	.dropdown-link:hover{
+		color:darkgreen;
+	}
+
+
+.mobile-menu-icon{
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.bar{
+	width: 25px;
+	height: 3px;
+	background: white;
+	margin: 4px 0;
+}
+
+@media (max-width: 1280px) {
+	.back-image img {
+		top: 95px;
+	}
+
+	.back-opacity {
+		top: 98px;
+	}
+
+	.heading {
+		top: 200px;
+		font-size: 20px;
+	}
+
+	.line {
+		position: fixed;
+	}
+
+	.nav_item {
+		display: flex;
+		justify-content: flex-end;
+		right: 5%;
+	}
+
+	.image {
+		display: none;
+	}
+
+	.logo {
+		position: relative;
+		display: inline-block;
+	}
+
+	.back-image img {
+		height: 350px;
+	}
+
+	.back-opacity {
+		height: 350px;
+	}
+
+	.first-base {
+		top: 445px;
+	}
+
+	.droppeddown {
+		right: -15px;
+		top: 50px;
+		font-size: 20px;
+	}
+
+	.contacts {
+		top: 4%;
+		font-size: 30px;
+		left: 8.5%;
+	}
+
+	.number {
+		top: 16%;
+		font-size: 15px;
+		left: 11%;
+	}
+
+	.email {
+		top: 25%;
+		font-size: 15px;
+		left: 7%;
+	}
+
+	.address {
+		top: 34%;
+		font-size: 15px;
+		left: 9%;
+	}
+
+	.last-base {
+		height: 400px;
+	}
+
+	.third-line {
+		bottom: -1000px;
+	}
+
+	#firstseperator {
+		top: 15%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#secondseperator {
+		top: 23%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#thirdseperator {
+		top: 32.5%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#fourthseperator {
+		top: 52%;
+		width: 230px;
+		left: 2.5%;
+	}
+
+	#fifthseperator {
+		width: 3px;
+		height: 210px;
+		top: 0px;
+		left: 265px;
+	}
+
+	.philosophy-base {
+		width: 80%;
+		left: 10%;
+		top: 900px;
+		height: 300px;
+	}
+
+	#philosophy-text {
+		font-size: 30px;
+	}
+
+	#philomessage {
+		font-size: 20px;
+	}
+
+	.mission-base {
+		width: 80%;
+		left: 10%;
+		top: 1230px;
+		height: 300px;
+	}
+
+	#mission-text {
+		font-size: 30px;
+	}
+
+	#missmessage {
+		font-size: 20px;
+	}
+
+	.vision-base {
+		width: 80%;
+		left: 10%;
+		top: 1570px;
+		height: 300px;
+	}
+
+	#vision-text {
+		font-size: 30px;
+	}
+
+	#vissmessage {
+		font-size: 20px;
+	}
+}
+
+@media (min-height: 700px) and (max-height: 899px){
+	.last-base {
+		height: 400px;
+		top: 225%;
+	}
+}
+
+@media (min-height: 1300px) and (max-height: 1500px){
+	.last-base{
+		top: 200%;
+	}
+}
+
+@media (min-height: 667px) and (max-height: 790px){
+	.last-base{
+		top: 290%;
+	}
+}
+
+@media (min-height: 0px) and (max-height: 660px){
+	.last-base{
+		top: 320%
+	}
+}
+
+@media (max-width: 1024px) and (min-height: 400px) and (max-height: 932px) and (orientation: landscape) {
+	.last-base {
+		top: 460%; /* Ensure this is intentional */
+	}
+}
+@media (min-height: 344px) and (max-height: 344px) and (orientation: landscape) {
+	.last-base {
+		top: 550%; /* Make sure this is intentional */
+	}
+}
+@media (min-height: 360px) and (max-height: 390px) and (orientation: landscape) {
+	.last-base {
+		top: 520%; /* Make sure this is intentional */
+	}
+}
+@media (min-width: 1024px) and (max-width: 1400px) and (orientation: landscape) {
+	.last-base {
+		top: 250%;
+	}
+}
+@media (min-width: 1280px) and (max-width: 1280px) and (min-height: 720px) and (max-height: 720px){
+	.last-base{
+		top: 270%;
+	}
+}

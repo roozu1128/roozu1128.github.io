@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-decoration: none;
+}
+
+.template {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    top: 20%;
+    left: 20%;
+    background: white;
+}
+#DEVELOPMENT{
+    color: forestgreen;
+    font-size: 100px;
+}
+.sad {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    top: 40%;
+    left: 35%;
+    background: transparent;
+}
+
+.UPPERHEAD_container {
+    background-color: rgb(243, 191, 68);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+.line {
+    background-color: forestgreen;
+    width: 100%;
+    padding: 3px;
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+}
+
+.logo {
+    display: none;
+    width: 40px;
+}
+
+.UPPERHEAD_container {
+    transition: background-color 0.3s;
+}
+
+    .UPPERHEAD_container.scrolled {
+        background-color: rgb(210, 210, 210);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+/* Dropdown bar */
+.dropdown {
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.barmenu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_item {
+    position: relative;
+    font-size: 30px;
+    justify-content: flex-end;
+    right: 17%;
+}
+
+    .nav_item a {
+        color: rgb(224, 224, 224);
+        background-color: transparent;
+        text-decoration: none;
+        padding: 1rem;
+        transition: color 0.5s;
+    }
+
+    .nav_item:hover a {
+        color: green;
+    }
+
+    .nav_item a {
+        color: rgb(224, 224, 224);
+        transition: color 0.5s;
+    }
+
+
+        .nav_item a.scrolled {
+            color: black;
+        }
+
+    .nav_item:hover a.scrolled {
+        color: green;
+    }
+
+
+.droppeddown {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    margin-top: 30px;
+    right: -40px;
+    cursor: pointer;
+}
+
+    .droppeddown.active {
+        opacity: 1;
+        max-height: 400px;
+        pointer-events: auto;
+    }
+
+.dropdown-link {
+    padding: 8px;
+    display: block;
+    color: black;
+    transition: color 0.5s;
+}
+
+    .dropdown-link:hover {
+        color: darkgreen;
+    }
+
+
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 1024px){
+    .logo {
+        position: relative;
+        display: inline-block;
+    }
+
+    .droppeddown {
+        right: -15px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .nav_item {
+        display: flex;
+        justify-content: flex-end;
+        right: 30%;
+    }
+
+    .image {
+        display: none;
+    }
+    .template{
+        height: 20%;
+        width: 50%
+    }
+    #DEVELOPMENT{
+        font-size: 40px;
+    }
+    .sad {
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        top: 40%;
+        left: 15%;
+        background: transparent;
+    }
+}
